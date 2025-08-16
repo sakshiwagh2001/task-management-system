@@ -20,10 +20,49 @@ This Task Management System allows Admins, Managers, and Employees to manage tas
 
 
 ## User Roles
-| Role    | Permissions |
-|---------|-------------|
-| **Admin** | Full control: Create/update/delete users, assign tasks, approve/reject tasks, view all tasks |
-| **Manager** | Create/update/delete tasks for Employees, approve/reject Employee tasks, view tasks assigned by Admin |
-| **Employee** | View assigned tasks, update status (`Pending` / `Done`) |
 
+
+User Roles
+
+Admin
+
+Full access to all modules.
+
+Can create/update/delete users.
+
+Can create/update/delete/assign tasks.
+
+Can view all tasks and approve/reject tasks submitted by Managers.
+
+Manager
+
+Can create/update/delete tasks assigned to Employees.
+
+Can view tasks created by Admin.
+
+Can approve/reject tasks submitted by Employees.
+
+Employee
+
+Can view tasks assigned to them by Admin or Manager.
+
+Can update task status (Pending, Done).
 ---
+
+
+## Backend
+**Structure:**
+
+
+**Install dependencies and run backend:**
+```bash
+cd backend
+python -m venv venv          # Create virtual environment
+venv\Scripts\activate        # Activate (Windows)
+pip install -r requirements.txt
+flask run
+```
+## Frontend
+cd frontend
+npm install
+npm start
